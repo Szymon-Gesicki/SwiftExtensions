@@ -13,7 +13,7 @@ extension UITableView {
 
         let activityView: UIActivityIndicatorView
         if #available(iOS 13.0, *) {
-            activityView = UIActivityIndicatorView(activityIndicatorStyle: .medium)
+            activityView = UIActivityIndicatorView(style: .medium)
         } else {
             activityView = UIActivityIndicatorView()
         }
