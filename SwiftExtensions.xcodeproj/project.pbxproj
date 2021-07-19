@@ -16,6 +16,7 @@
 		92FEA73726A60774008BFAA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FEA73526A60774008BFAA3 /* Main.storyboard */; };
 		92FEA73926A60778008BFAA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92FEA73826A60778008BFAA3 /* Assets.xcassets */; };
 		92FEA73C26A60778008BFAA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FEA73A26A60778008BFAA3 /* LaunchScreen.storyboard */; };
+		92FEA75E26A60AF6008BFAA3 /* TestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FEA75D26A60AF6008BFAA3 /* TestFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		92FEA73826A60778008BFAA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92FEA73B26A60778008BFAA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92FEA73D26A60778008BFAA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92FEA75D26A60AF6008BFAA3 /* TestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				92FEA71226A606E2008BFAA3 /* SwiftExtensions.h */,
 				92FEA71326A606E2008BFAA3 /* Info.plist */,
+				92FEA75D26A60AF6008BFAA3 /* TestFile.swift */,
 			);
 			path = SwiftExtensions;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					92FEA70E26A606E2008BFAA3 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					92FEA71726A606E2008BFAA3 = {
 						CreatedOnToolsVersion = 12.5;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92FEA75E26A60AF6008BFAA3 /* TestFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		92FEA72426A606E2008BFAA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = R69482HBMQ;
@@ -454,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NQProject.SwiftExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +469,7 @@
 		92FEA72526A606E2008BFAA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = R69482HBMQ;
@@ -486,6 +494,7 @@
 		92FEA72726A606E2008BFAA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R69482HBMQ;
 				INFOPLIST_FILE = SwiftExtensionsTests/Info.plist;
@@ -504,6 +513,7 @@
 		92FEA72826A606E2008BFAA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R69482HBMQ;
 				INFOPLIST_FILE = SwiftExtensionsTests/Info.plist;
